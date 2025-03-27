@@ -1,7 +1,7 @@
 import bgm from '../Assets/Music/gamebgm.mp3'
 import {useState,useRef, useEffect} from 'react'
 
-function PlayMusic(){
+export default function PlayMusic(){
     const [isPlaying,SetisPlaying] = useState(false);
     const song = useRef(null)
 
@@ -14,7 +14,8 @@ function PlayMusic(){
             song.current.play();
         }else{
             song.current.pause();
-        }SetisPlaying(!isPlaying)
+        }
+        SetisPlaying(!isPlaying)
     }
     return(
     <>
@@ -22,5 +23,3 @@ function PlayMusic(){
         <button onClick={toggle}>{!isPlaying ? "Play":"Pause"}</button>     
     </>
 )}
-
-export default PlayMusic;
