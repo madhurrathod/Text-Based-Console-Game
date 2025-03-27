@@ -19,7 +19,7 @@ export default function PlayMusic(){
     }
     return(
     <>
-        <h1>Music Player</h1>
-        <button onClick={toggle}>{!isPlaying ? "Play":"Pause"}</button>     
+        <h1>Let the Game Begin</h1>
+        <button style = {{"margin-left":"2vw","padding":"20px 50px"}} onClick={toggle}>{!isPlaying ? "Play":"Pause"}</button>     
     </>
 )}
