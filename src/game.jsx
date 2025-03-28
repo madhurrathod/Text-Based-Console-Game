@@ -1,7 +1,4 @@
 
-// const music = new Audio('../Assets/Music/gamebgm.mp3')
-// music.play()
-
 export default function textBased(){
     console.log("Enter Your Name");
     
@@ -50,12 +47,20 @@ export default function textBased(){
                                                                                             console.log("ufff, I can't stop music")
                                                                                             setTimeout(()=>{
                                                                                                 console.log("But I can play more songs")
-                                                                                                setInterval(()=>{
-                                                                                                    console.log("I'll ruin your experience")
+                                                                                                setTimeout(()=>{
                                                                                                     const music = new Audio('../Assets/Music/gamebgm.mp3')
                                                                                                     music.play()
+                                                                                                    console.log("I'll ruin your experience")
+                                                                                                    setTimeout(()=>{
+
+                                                                                                        setInterval(()=>{
+                                                                                                            console.log("I'll ruin your experience")
+                                                                                                            const music = new Audio('../Assets/Music/gamebgm.mp3')
+                                                                                                            music.play()
+                                                                                                        },200)
+                                                                                                    },2000)
                                                                                        
-                                                                                                    },5000)
+                                                                                                    },2000)
                                                                                             },2000)
                                                                                         },2000)
                                                                                     },1000)
