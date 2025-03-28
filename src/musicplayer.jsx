@@ -17,9 +17,19 @@ export default function PlayMusic(){
         }
         SetisPlaying(!isPlaying)
     }
+/////////////////
+function openconsole(){
+    alert("OPEN CONSOLE")
+}
+/////////////////////
     return(
     <>
         <h1>Let the Game Begin</h1>
-        <button style = {{"margin-left":"2vw","padding":"20px 50px"}} onClick={toggle}>{!isPlaying ? "Play":"Pause"}</button>     
+        <button style = {{"margin-left":"2vw","padding":"20px 50px"}} 
+        
+        onClick={()=>{openconsole(),toggle()}} > ̀
+        
+        {!isPlaying ? "Play":"Pause"} 
+            </button>     
     </>
 )}
