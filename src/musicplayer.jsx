@@ -1,5 +1,7 @@
 import bgm from '../Assets/Music/gamebgm.mp3'
 import {useState,useRef, useEffect} from 'react'
+import textBased from './game';
+
 
 export default function PlayMusic(){
     const [isPlaying,SetisPlaying] = useState(false);
@@ -9,27 +11,29 @@ export default function PlayMusic(){
         song.current = new Audio(bgm);
         song.current.loop = true;
     },[])
+
     const toggle = ()=>{
         if(!isPlaying){
             song.current.play();
+            
         }else{
             song.current.pause();
         }
         SetisPlaying(!isPlaying)
     }
-/////////////////
-function openconsole(){
-    alert("OPEN CONSOLE")
-}
-/////////////////////
     return(
     <>
+
         <h1>Let the Game Begin</h1>
         <button style = {{"margin-left":"2vw","padding":"20px 50px"}} 
-        
-        onClick={()=>{openconsole(),toggle()}} > ̀
-        
-        {!isPlaying ? "Play":"Pause"} 
+        onClick={()=>{toggle()}} >
+        {!isPlaying ? "Play Music":"Pause Music"} 
             </button>     
+        
+        <button style={{"margin-left":"2vw","padding":"20px 50px"}} 
+        onClick={textBased}>
+        Let's Play
+        </button>
+
     </>
 )}
