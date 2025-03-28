@@ -1,5 +1,5 @@
-# Dodge-Dash
+# Text-Based-Console-Game
 A game project made with React js.
-Work in progress...
+Work is completed.
 
 
