@@ -1,6 +1,4 @@
 export default function textBased(){
-    console.log("Enter Your Name");
-    
     setTimeout(()=>{
         let name = prompt("Input Your Name");
         console.log(`Hello ${name}, welcome to textBased game.`)
