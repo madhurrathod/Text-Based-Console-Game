@@ -2,7 +2,6 @@ import bgm from '../Assets/Music/gamebgm.mp3'
 import {useState,useRef, useEffect} from 'react'
 import textBased from './game';
 
-
 export default function PlayMusic(){
     const [isPlaying,SetisPlaying] = useState(false);
     const song = useRef(null)
