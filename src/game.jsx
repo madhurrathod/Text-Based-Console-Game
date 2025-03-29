@@ -1,4 +1,3 @@
-
 export default function textBased(){
     console.log("Enter Your Name");
     
@@ -46,17 +45,19 @@ export default function textBased(){
                                                                                         setTimeout(()=>{
                                                                                             console.log("ufff, I can't stop music")
                                                                                             setTimeout(()=>{
-                                                                                                console.log("But I can play more songs")
+                                                                                                console.log("But I can throw more errors")
                                                                                                 setTimeout(()=>{
-                                                                                                    const music = new Audio('../Assets/Music/gamebgm.mp3')
+                                                                                                    const music = new Audio('/Assets/Music/gamebgm.mp3')
                                                                                                     music.play()
                                                                                                     console.log("I'll ruin your experience")
                                                                                                     setTimeout(()=>{
 
                                                                                                         setInterval(()=>{
                                                                                                             console.log("I'll ruin your experience")
-                                                                                                            const music = new Audio('../Assets/Music/gamebgm.mp3')
+                                                                                                            const music = new Audio('/Assets/Music/gamebgm.mp3')
                                                                                                             music.play()
+                                                                                                    
+                                                                                                            
                                                                                                         },200)
                                                                                                     },2000)
                                                                                        
@@ -85,9 +86,5 @@ export default function textBased(){
            },2000)  
         },2000)
     },1000)
-
-    // console.log("In this game you have to say something.")
-    
-    // prompt("")
 }
 

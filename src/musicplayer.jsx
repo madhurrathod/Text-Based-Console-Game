@@ -23,16 +23,15 @@ export default function PlayMusic(){
     }
     return(
     <>
-
-        <h1 style={{"text-align":"center","margin":"2vw"}}>Let the Game Begin</h1>
-        <button style = {{"margin-left":"5vw","padding":"20px 50px","background-image":"conic-gradient(lightgreen,lightblue,green)",
-        "border":"5px solid rgb(109, 180, 81)"}} 
+        <h1 style={{marginLeft:"5vw", marginTop: "35vh"}}>Let the Game Begin</h1>
+        <button style = {{marginLeft: "3vw", padding: "20px 50px", backgroundImage: "conic-gradient(lightgreen,lightblue,green)",
+        border: "5px solid rgb(109, 180, 81)","border-radius":"20px"}} 
         onClick={()=>{toggle()}} >
         {!isPlaying ? "Play Music":"Pause Music"} 
             </button>     
         
-        <button style={{"margin-left":"2vw","padding":"20px 50px","background-image":"conic-gradient(pink,lightblue,yellow)",
-        "border":"5px solid pink"}} 
+        <button style={{marginLeft: "1vw", padding: "20px 50px", backgroundImage: "conic-gradient(pink,lightblue,yellow)",
+        border: "5px solid pink","border-radius":"20px"}} 
         onClick={textBased}>
         Let's Play
         </button>
