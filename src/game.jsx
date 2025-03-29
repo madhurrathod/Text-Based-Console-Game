@@ -47,14 +47,14 @@ export default function textBased(){
                                                                                             setTimeout(()=>{
                                                                                                 console.log("But I can throw more errors")
                                                                                                 setTimeout(()=>{
-                                                                                                    const music = new Audio('/Assets/Music/gamebgm.mp3')
+                                                                                                    const music = new Audio('./../Assets/Music/gamebgm.mp3')
                                                                                                     music.play()
                                                                                                     console.log("I'll ruin your experience")
                                                                                                     setTimeout(()=>{
 
                                                                                                         setInterval(()=>{
                                                                                                             console.log("I'll ruin your experience")
-                                                                                                            const music = new Audio('/Assets/Music/gamebgm.mp3')
+                                                                                                            const music = new Audio('./../Assets/Music/gamebgm.mp3')
                                                                                                             music.play()
                                                                                                     
                                                                                                             
