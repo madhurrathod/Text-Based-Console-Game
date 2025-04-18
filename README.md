@@ -2,6 +2,4 @@
 A game project made with React js.
 Work is completed.
 
-
-# gameka
-# gameka
+Hosted URL: https://textbasd.netlify.app/
